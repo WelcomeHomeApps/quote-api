@@ -1,0 +1,57 @@
+# Memory directory .gitignore — safety net for Claude per-project memory
+#
+# Memory lives in git (symlinked from ~/.claude/projects/<enc>/memory/ per
+# .claude/signoff-protocol.md Step 2), which means it gets pushed to GitHub.
+# This file is the first line of defense against accidentally committing
+# secrets or local-only convenience files.
+#
+# Adding more patterns as the project evolves is encouraged.
+# REMOVING patterns requires a real reason — get Jim's sign-off.
+
+# Env files (any variant)
+*.env
+*.env.*
+.env*
+
+# Secret-shaped names (lowercase + common capitalizations)
+*secret*
+*Secret*
+*SECRET*
+*token*
+*Token*
+*TOKEN*
+*credential*
+*Credential*
+*CREDENTIAL*
+*password*
+*Password*
+*PASSWORD*
+*api-key*
+*api_key*
+*apikey*
+
+# Keys & certs
+*.pem
+*.key
+*.p12
+*.pfx
+*.cer
+*.crt
+*-private.json
+*-credentials.json
+*service-account*.json
+
+# Local-only convenience
+*.local
+*.private
+*.tmp
+*.temp
+*.swp
+.DS_Store
+Thumbs.db
+
+# Anything explicitly marked as do-not-commit
+DO-NOT-COMMIT*
+do-not-commit*
+NO-COMMIT*
+no-commit*

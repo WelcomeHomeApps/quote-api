@@ -35,3 +35,8 @@ Each quote object:
   "author": "Author Name"
 }
 ```
+
+
+## Signoff
+
+See `.claude/signoff-protocol.md`.
