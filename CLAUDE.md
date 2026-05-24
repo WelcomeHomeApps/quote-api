@@ -37,6 +37,10 @@ Each quote object:
 ```
 
 
+## Session start
+
+Run Step 0 (Session-start sync) of `.claude/signoff-protocol.md` before substantive work — `git pull --rebase`, scan recent commits, read `docs/HANDOFF.md` if present. On a multi-device repo, skipping this means working from stale memory.
+
 ## Signoff
 
 See `.claude/signoff-protocol.md`.
